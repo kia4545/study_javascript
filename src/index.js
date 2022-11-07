@@ -43,7 +43,20 @@
 // console.log(value4);
 
 //constで定義した配列はプロパティの変更が可能
-const value5 = ['dog', 'cat'];
-value5[0] = "var";
-value5.push("make");
-console.log(value5);
+// const value5 = ['dog', 'cat'];
+// value5[0] = "var";
+// value5.push("make");
+// console.log(value5);
+
+//テンプレート文字列
+const name = "aaaaiiii";
+const age = 58;
+//「私の名前はaaaaiiiiです。年齢は５８歳です」
+
+//従来の方法
+const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+console.log(message1);
+
+//テンプレート文字列を用いた方法
+const message2 = `私の名前は${name}です。年齢は${age}です。`;
+console.log(message2);
