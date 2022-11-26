@@ -191,7 +191,29 @@ const arr1 = [1, 2];
 
 // console.log(formatNum);
 
-const checkSum = (num1, num2) => {
-    return num1 + num2 > 100 ? '100を超えてます' : '許容範囲内です';
+// const checkSum = (num1, num2) => {
+//     return num1 + num2 > 100 ? '100を超えてます' : '許容範囲内です';
+// }
+// console.log(checkSum(100, 8));
+
+//論理演算子
+const flag1 = true;
+const flag2 = true;
+
+// if (flag1 || flag2) {
+//     console.log("1か2はtrueになります");
+// }
+
+if (flag1 && flag2) {
+    console.log("1も2もtrueになります");
 }
-console.log(checkSum(100, 8));
+
+// || は左側がfalseなら右側を返す
+const num = 5;
+const fee = num || "金額未設定です";
+console.log(fee);
+
+// &&は左側がtrueなら右側を返す
+const num2 = 1;
+const fee2 = num2 && "何か設定されました";
+console.log(fee2);
